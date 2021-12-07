@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>Document</title>
+</head>
+<style>
+    .icon-head {
+        color: #dbac69;
+        font-size: smaller;
+    }
+    .head {
+        padding: 0px 40px 0px 30px;
+        background-color: #082346;
+    }
+    .btn-sign-up {
+        background-color: #dbac69;
+        font-size: smaller;
+        font-weight: bolder;
+    }
+    .banner {
+        padding-top: 50%;
+        width: 120%;
+    }
+    .teacher-list {
+        margin-top: 100px;
+        background-color: #082346;
+    }
+    .teacher-card {
+        width: 24rem;
+        background-color: #082346;
+        border-radius: 0%;
+        border: none;
+    }
+    .teacher-name {
+        color: #dbac69; 
+        font-weight: bold;
+    }
+    .teacher-info {
+        color: #dbac69; 
+        font-size: smaller;
+    }
+    .teacher-img {
+        padding: 0 15% 0 15%;
+    }
+    .teacher-detail {
+        font-size: 14px;
+    }
+    .footer {
+        background-color: #dbac69;
+        padding: 30px;
+    }
+    .owner-info {
+        font-size:x-small;
+        font-weight: bolder;
+    }
+    .student-exp-card {
+        width: 24rem;
+        background-color: #FFF8C6;
+    }
+    .piale-dark-card {
+        width: 24rem;
+        background-color: #082346;
+        border-radius: 0%;
+    }
+    .piale-light-card {
+        width: 24rem;
+        background-color: #dbac69;
+        border-radius: 0%;
+    }
+    .why-card {
+        width: 24rem;
+        border: none;
+    }
+    .content-head {
+        color: #082346;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .content-head-light {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+
+    
+</style>
+<body>
+    <!-- Đầu trang -->
+    <header>
+        <div class="head">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar icon-head" href="#"><i class="fas fa-mobile-alt" aria-hidden="true"></i>1800 6885</a>
+                <a class="navbar icon-head" href="#"><i class="fas fa-envelope" aria-hidden="true"></i>cskhnative@topica.edu.vn</a>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0" style="font-size: small;">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color: #dbac69;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color: #dbac69;"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color: #dbac69;"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div style="padding: 10px 40px 10px 40px;" class="bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="https://topicanative.edu.vn/wp-content/uploads/2019/11/logo-native-min-1-1.png" style="width:50%"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0" style="font-size: smaller;">
+                        <ul class="navbar-nav mr-auto" >
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color: #dbac69;">Vì sao chọn Topica Native</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Điểm mạnh</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Phương pháp PIALE</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Chia sẻ học viên</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Đối tác</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Đội ngũ giáo viên</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Giới thiệu -->
+    <div class="container-fluid text-white" style="background-color: #082346;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div style="margin-top: 25%; margin-left: 20%">
+                <p class="font-weight-bold" style="font-size: 40px">
+                  <span style="color: #dbac69; font-size: 60px;">7 NGÀY</span> HỌC THỬ TIẾNG ANH MIỄN PHÍ TẠI
+                </p>
+                <p class="font-weight-bold" style="font-size: 40px">
+                    TOPICA NATIVE
+                </p>
+                <p style="opacity: 50%">
+                    Cơ hội luyện tập tiếng Anh giao tiếp với người bản xứ, tăng cường khả năng nói
+                    và phản xạ tự nhiên. Học trực tuyến thỏa thích lên đến 16 giờ mỗi ngày, không
+                    giới hạn lớp luyện nghe. Đặc biệt, miễn phí kiểm tra trình độ đầu vào.
+                </p>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <button class="btn btn-lg btn-sign-up">ĐĂNG KÍ NGAY</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <img
+                class="first-slide align-items-center banner"
+                src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/banner/main-layer-mb@2x.webp"
+                alt="First slide"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tư vấn đầu vào -->
+
+      <div class="container text-center" style="margin-top: 100px;">
+        <div >
+            <h1 class="content-head">TƯ VẤN VÀ KIỂM TRA
+            <br>ĐẦU VÀO MIỄN PHÍ</h1>
+        </div>
+        <div class="form-group text-center" style="padding: 50px 150px 0 150px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mt-3">
+                        <input  class="form-control" placeholder="Họ và tên">
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option >Độ tuổi</option>
+                            <option value="1">5-11</option>
+                            <option value="2">12-30</option>
+                            <option value="3">30-60</option>
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option >Tần suất sử dụng tiếng anh</option>
+                            <option value="1">Hằng ngày</option>
+                            <option value="2">Thỉnh thoảng</option>
+                            <option value="3">Ít khi dùng</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-3">
+                        <input  class="form-control" placeholder="Số điện thoại">
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Mục đích học tiếng anh</option>
+                            <option value="1">Làm việc</option>
+                            <option value="2">Học tập</option>
+                            <option value="3">Đam mê</option>
+                        </select>                    
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Lĩnh vực làm việc</option>
+                            <option value="1">Văn phòng</option>
+                            <option value="2">Ngoại thương</option>
+                            <option value="3">Free</option>
+                        </select>                    
+                    </div>               
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-3">
+                        <input  class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Trình độ hiện tại</option>
+                            <option value="1">Level 1</option>
+                            <option value="2">Level 2</option>
+                            <option value="3">Level 3</option>
+                        </select>                    
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Thu nhập</option>
+                            <option value="1">5-7tr</option>
+                            <option value="2">7-10tr</option>
+                            <option value="3">Trên 10tr</option>
+                        </select>                    
+                    </div>  
+                </div>
+            </div>
+            <div class="mt-5 ">
+                <button class="btn btn-warning btn-lg btn-sign-up">Đăng kí ngay</button>
+            </div>  
+        </div>
+      </div>
+
+      <!-- vì sao chọn topica -->
+      <div class="container text-center" style="margin-top: 100px;">
+        <div >
+            <h1 class="content-head">VÌ SAO CHỌN TOPICA NATIVE</h1><br/>
+            <P>NẮM BẮT NGAY CƠ HỘI HỌC TẠI TOPICA NATIVE. Trung tâm tiếng Anh thu nhỏ
+            <br>trong điện thoại, máy tính của bạn. Học tiếng Anh giao tiếp trực tuyến dễ dàng hơn
+            <br>với hệ thống riêng và lộ trình được thiết kế tối ưu cho mỗi cá nhân.</P>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card why-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/why-topica/quality-ico.webp" class="card-img-top" alt="..." style="width:70%;padding-left: 30%;">
+                <div class="card-body">
+                  <h5 class="card-title">HỌC CHẤT LƯỢNG</h5>
+                  <p class="card-text">Luyện nói tiếng Anh online với 100% giáo viên bản xứ từ Âu, Mỹ, Úc và trợ giảng người Việt. Miễn phí tư vấn & kiểm tra trình độ đầu vào. Cam kết tối đa 6 học viên/lớp. Giá học phí tiếng Anh online tại TOPICA NATIVE chỉ từ 2tr/tháng. Ưu đãi cho các gói dài hạn và đăng ký theo nhóm.</p>
+                </div>
+            </div>
+            <div class="card why-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/why-topica/active-ico.webp" class="card-img-top" alt="..." style="width:70%;padding-left: 30%;">
+                <div class="card-body">
+                  <h5 class="card-title">HỌC CHỦ ĐỘNG</h5>
+                  <p class="card-text">Học tiếng Anh thỏa thích lên đến 16 giờ mỗi ngày, thời gian học linh hoạt từ 8h00 - 24h00. Học dễ dàng mọi lúc, mọi nơi: chỉ cần điện thoại di động, ipad hoặc máy tính là học được. Tiết kiệm thời gian, chi phí đi lại. Khóa học tiếng Anh bắt đầu ngay với lộ trình riêng biệt phù hợp từng học viên và không cần chờ mở lớp.</p>
+                </div>
+            </div>
+            <div class="card why-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/why-topica/cooperate-ico.webp" class="card-img-top" alt="..." style="width:70%;padding-left: 30%;">
+                <div class="card-body">
+                  <h5 class="card-title">HỌC PHỐI HỢP</h5>
+                  <p class="card-text">Phương pháp PIALE chỉ có tại TOPICA NATIVE hình thành phản xạ giao tiếp tự nhiên, nhớ lâu, giúp học viên gạt bỏ rào cản sợ Tiếng Anh. Đồng thời, PIALE hỗ trợ người học khả năng tự kiểm tra, đánh giá hiệu quả học tập và luyện tập.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- PIALE -->
+      <div class="text-center" style="margin-top: 100px;">
+        <div >
+            <h1 class="content-head">HỌC VỚI PIALE - TẠO DỰNG PHẢN 
+                <br>XẠ NÓI TIẾNG ANH TỰ NHIÊN
+            </h1><br/>
+            <P>Học giao tiếp tiếng Anh tự nhiên như một đứa trẻ theo phương pháp PIALE
+            <br>tạo dựng thói quen nói, sửa sai và tăng khả năng ghi nhớ.
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card piale-dark-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/P.svg" class="card-img-top" alt="..." style="height:100px; margin-top: 100px;">
+                <div class="card-body">
+                  <h4 class="card-title text-white">PRACTICE</h4>
+                  <div class="d-flex align-items-end justify-content-center mt-5 mb-3" style="height: 100px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/practice-ico.svg"/>
+                    </div>
+                  <p class="card-text text-white">Luyện tập trước<br>khi vào lớp</p>
+                </div>
+            </div>
+            <div class="card piale-light-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/I.svg" class="card-img-top" alt="..." style="height:100px; margin-top: 100px;">
+                <div class="card-body">
+                  <h4 class="card-title">INTERACTION</h4>
+                  <div class="d-flex align-items-end justify-content-center mt-5 mb-3" style="height: 100px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/interaction-ico.svg"/>
+                  </div>
+                  <p class="card-text" style="color: #082346;">Học giao tiếp<br>với giáo viên</p>
+                </div>
+            </div>
+            <div class="card piale-dark-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/A.svg" class="card-img-top" alt="..." style="height:100px; margin-top: 100px;">
+                <div class="card-body">
+                  <h4 class="card-title text-white">ASSESSMENT</h4>
+                  <div class="d-flex align-items-end justify-content-center mt-5 mb-3" style="height: 100px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/assessment-ico.svg"/>
+                </div>
+                  <p class="card-text text-white mb-5">Được nhận xét<br>theo cá nhân</p>
+                </div>
+            </div>
+            <div class="card piale-light-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/L.svg" class="card-img-top" alt="..." style="height:100px; margin-top: 100px;">
+                <div class="card-body">
+                  <h4 class="card-title">LECTURE</h4>
+                  <div class="d-flex align-items-end justify-content-center mt-5 mb-3" style="height: 100px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/lecture-ico.svg"/>
+                    </div>
+                  <p class="card-text" style="color: #082346;">Ôn tập và học<br>mở rộng</p>
+                </div>
+            </div>
+            <div class="card piale-dark-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/E.svg" class="card-img-top" alt="..." style="height:100px; margin-top: 100px;">
+                <div class="card-body">
+                  <h4 class="card-title text-white">EVALUATION</h4>
+                  <div class="d-flex align-items-end justify-content-center mt-5 mb-3" style="height: 100px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/piale-method/evaluation-ico.svg"/>
+                </div>
+                  <p class="card-text text-white">Kiểm tra khép<br>vòng học tập</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Trải nghiệm học viên -->
+      <div class="container text-center" style="margin-top: 100px;">
+        <div >
+            <h1 class="content-head">NHỮNG TRẢI NGHIỆM ĐẶC BIỆT
+                <br>TỪ HỌC VIÊN</h1><br/>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card mr-3 ml-3 student-exp-card">
+                <div class="d-flex justify-content-left" style="padding: 20px 0 0 20px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/testimonials/person-2@2x.png" class="card-img-top" alt="..." style="width:50px;height: 50px;">
+                    <p class="card-text text-left"><span style="font-weight: bold;">Hoài Linh </span>
+                        <br>Diễn viên
+                    </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-left">
+                    Ban đầu học với giáo viên người nước ngoài mình cũng còn hơi bỡ ngỡ, tại các thầy cô nói nhanh với phát âm chuẩn nên hơi khó nghe đối với mình ý. Nhưng nhờ có các bạn cố vấn siêu nhiệt tình nên mình cảm thấy mình tiến bộ qua từng buổi học luôn. Từ ngày học xong mình cũng mạnh dạn hơn và dám nói chuyện với những khách hàng ở công ty lớn có sếp là người nước ngoài ấy mọi người.
+                    </p>
+                </div>
+            </div>
+            <div class="card mr-3 ml-3 student-exp-card">
+                <div class="d-flex justify-content-left" style="padding: 20px 0 0 20px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/testimonials/person-1@2x.png" class="card-img-top" alt="..." style="width:50px;height: 50px;">
+                    <p class="card-text text-left"><span style="font-weight: bold;">Trương Thị Dung </span>
+                    <br>sinh viên
+                    </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-left">
+                    Ban đầu tôi không theo kịp vì không có thời gian chuẩn bị bài và cũng chưa quen cách học online.Tôi đã gặp khó khăn rất nhiều, cũng có lúc tôi muốn bỏ cuộc.Nhưng với sự nỗ lực của tôi, sự nhiệt tình của giáo viên và bạn cùng lớp, bên cạnh đó còn có sự hỗ trợ của giáo viên chuyên môn. Ban đầu tôi từ Basic 200_ Basic 300 và hiện tại tôi đang ở Intermediate 100.
+                </p>
+                </div>
+            </div>
+            <div class="card mr-3 ml-3 student-exp-card">
+                <div class="d-flex justify-content-left" style="padding: 20px 0 0 20px;">
+                    <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/testimonials/person-3@2x.png" class="card-img-top" alt="..." style="width:50px;height: 50px;">
+                    <p class="card-text text-left"><span style="font-weight: bold;">Nguyễn Trung Thu </span>
+                    <br>Doanh nhân
+                    </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-left">
+                    Mình duy trì việc học tiếng Anh nhiều năm để tự mở ra nhiều cơ hội cho bản thân trong công việc và cuộc sống. Nhưng từ khi đảm đương nhiều trọng trách hơn ở công ty, mình không có nhiều thời gian dành cho việc học tiếng Anh nữa.Cho đến khi bạn đồng nghiệp giới thiệu TOPICA NATIVE là nền tảng học tiếng Anh giao tiếp online rất nổi tiếng hiện nay, rất phù hợp cho người bận rộn, mình như khám phá ra thêm một chân trời mới. Mình hoàn toàn chủ động về thời gian khi học với TOPICA NATIVE.
+                </p>
+                </div>
+            </div>
+          </div>
+      </div>
+
+       <!-- Doanh nghiệp -->
+       <div class="container text-center" style="margin-top: 100px;">
+        <div >
+            <h1 class="content-head">ĐƯỢC TIN TƯỞNG
+                <br>BỞI NHIỀU DOANH NGHIỆP</h1><br/>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/BIDV-Logo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/namlong-logo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/evolable-logo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/msb-logo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/baoviet-logo.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card mr-3 ml-3" style="width: 12rem;border:none">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/trusted-enterprise/siemens-logo.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+      </div>
+
+      <!-- Đội ngũ giáo viên -->
+      <div class="text-center text-white pb-5 pt-5 teacher-list">
+        <div >
+            <h1 class="content-head-light">ĐỘI NGŨ GIÁO VIÊN BẢN XỨ</h1><br/>
+            <P style="font-size: smaller;">Tại TOPICA NATIVE, các giáo viên bản xứ không chỉ có chứng chỉ chuyên
+            <br>nghiệp mà đều có nhiều năm kinh nghiệm, hướng đến việc cung cấp chất
+            <br>lượng giảng dạy tốt nhất</P>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card teacher-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/teachers/Topica-Native-English-Teacher_BENJAMIN-DARYLL-HOPPE.jpg" class="card-img-top teacher-img" alt="...">
+                <div class="card-body">
+                  <p class="card-title teacher-name">BENJAMIN DARYLL HOPPE</p>
+                  <p class="teacher-info">QUỐC TỊCH: MỸ
+                  <br>CHỨNG CHỈ: CELTA</p>
+                  <p class="card-text teacher-detail">
+                    Tốt nghiệp Đại học University of Wisconsin – Milwaukee, đạt chứng chỉ CELTA Certificate
+                    <br>Kinh nghiệm giảng dạy từ 2017</p>
+                </div>
+            </div>
+            <div class="card teacher-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/teachers/Topica-Native-English-Teacher_KAITLIN-JAYNE-HACKING.jpg" class="card-img-top teacher-img" alt="...">
+                <div class="card-body">
+                    <p class="card-title teacher-name">KAITLIN JAYNE HACKING</p>
+                    <p class="teacher-info">QUỐC TỊCH: ANH
+                    <br>CHỨNG CHỈ: TEFL</p>
+                    <p class="card-text teacher-detail">
+                        Tốt nghiệp South Cheshire College
+                      <br> Chứng chỉ: TEFL Masters Certificate, Level 3 Early Years Educator
+                    <br> Kinh nghiệm giảng dạy từ 2014</p>                
+                    </div>
+            </div>
+            <div class="card teacher-card">
+                <img src="https://topicanative.edu.vn/wp-content/themes/native/templates/assets/img/teachers/Topica-Native-English-Teacher_SIERRA-SKYE-TURPIN.jpg" class="card-img-top teacher-img" alt="...">
+                <div class="card-body">
+                    <p class="card-title teacher-name">JOLANTA BEITNARAITE</p>
+                    <p class="teacher-info">QUỐC TỊCH: ÚC
+                    <br>CHỨNG CHỈ: TESOL/TEFL</p>
+                    <p class="card-text teacher-detail">
+                        Tốt nghiệp Đại học Granville TAFE College, Sydney, Australia, đạt chứng chỉ TESOL / TEFL Certificate
+                      <br>Kinh nghiệm giảng dạy từ 2016</p> 
+                    </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="container">
+              <div class="form-group">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <img src="https://topicanative.edu.vn/wp-content/uploads/2019/11/logo-native-min-1-1.png" style="width:50%"/>
+                        <p>All rights reserved | 2021 Topica Native</p>
+                      </div>
+                      <div class="col-md-6">
+                          <h5>CÔNG TY CỔ PHẦN GIÁO DỤC TOPICA ENGLISH</h5><br>
+                          <p class="owner-info">MST:0106291976 do Sở Kế Hoạch và Đầu tư TP.Hà Nội cấp ngày 27 tháng 08 năm 2013
+                          <br>Đại diện: Ông Dương Hữu Giang
+                          <br>Trụ sở chính: Tòa nhà số 75 Phương Mai, Đống Đa, Hà Nội.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+</body>
+</html>
